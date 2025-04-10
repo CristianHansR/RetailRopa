@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cssCarousel.css">
+    <link rel="stylesheet" href="css/cssIndex.css">
+
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>ModelaYour</title>
+</head>  
+<body>    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="#">ModelaYour</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Sobre Nosotros</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contactenos</a>
+              </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+
+   
+
+        <div class="carousel">
+            <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wanaka-tree.jpg">
+            <div id="carousel">
+            <figure id="spinner">
+                <img src="wanaka-tree.jpg" alt>
+                <img src="still-lake.jpg" alt>
+                <img src="pink-milford-sound.jpg" alt>
+                <img src="paradise.jpg" alt>
+                <img src="morekai.jpg" alt>
+                <img src="milky-blue-lagoon.jpg" alt>
+                <img src="lake-tekapo.jpg" alt>
+                <img src="milford-sound.jpg" alt>
+            </figure>
+            </div>
+            <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+            <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+
+        <div class="bodyCards">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/logo.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+    <footer>
+        <h4>Redes sociales</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Tiwtter</a>
+    </footer>
+
+    <script>
+         var angle = 0;
+        function galleryspin(sign) { 
+        spinner = document.querySelector("#spinner");
+        if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+        spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+        }
+    </script>
+</body>  
+</html>
